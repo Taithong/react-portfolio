@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/sunil.jpg";
+import myImg from "../../Assets/milk.jpg";
 import SocialMedia from "../SocialMedia";
 import TypeWriter from "./TypeWriter";
 
@@ -20,14 +20,11 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Sunil Yadav</strong>
+                <strong className="main-name"> Milk Nanthida</strong>
               </h1>
 
               <p className="heading-description blockquote">
-                I am passionate about using Javascript and Animation Libraries
-                to create awesome user experiences. With over five years of
-                experience developing web applications using the latest
-                front-end and back-end technologies.
+              Hello, My name is Nanthida CHANSAMONE, I am a Photographer and Graphic designer. It is honor for you to visit my portfolio.
               </p>
 
               <div className="heading-type">
