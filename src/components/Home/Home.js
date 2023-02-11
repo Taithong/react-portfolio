@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "antd";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/milk.jpg";
 import SocialMedia from "../SocialMedia";
@@ -33,7 +34,7 @@ function Home() {
             </Col>
 
             <Col md={5}>
-              <img src={myImg} className="profile-pic" alt="avatar" />
+              <Image src={myImg} className="profile-pic" alt="avatar"/>
             </Col>
           </Row>
         </Container>

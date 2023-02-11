@@ -1,5 +1,5 @@
 html {
-  --imp-text-color: #414141;
+  --imp-text-color: #000000;
 }
 
 .purple {
@@ -85,7 +85,7 @@ html {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
-  background-color: #343e47;
+  background-color: #000000;
 }
 
 .navbar-toggler {
@@ -782,8 +782,8 @@ html {
   background-color: #000000 !important;
 }
 .image-style {
-  height: 85%;
-  width: 90%;
+  /* height: 85%; */
+  width: 100%;
 }
 .project-title {
   font-weight: bold;
@@ -808,10 +808,15 @@ html {
 
 .skill-tools-wrapper {
   flex-direction: row;
+  justify-content: space-around;
 }
 
 @media (max-width: 767px) {
   .skill-tools-wrapper{
+    /* display: flex; */
     flex-direction: column;
+    align-items: center;
+    justify-items: space-around;
+    
   }
 }

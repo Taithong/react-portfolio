@@ -4,7 +4,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 function SocialMedia() {
   return (
@@ -12,7 +12,6 @@ function SocialMedia() {
       <li className="social-icons">
         <a
           href="https://github.com/nunthida"
-          target="_blank"
           rel="noreferrer"
           className="icon-colour  home-social-icons"
         >
@@ -21,18 +20,16 @@ function SocialMedia() {
       </li>
       <li className="social-icons">
         <a
-          href="https://www.linkedin.com/in/sunilkumaryadav84/"
-          target="_blank"
+          href="https://www.facebook.com/mill.nunthida"
           rel="noreferrer"
           className="icon-colour  home-social-icons"
         >
-          <FaLinkedinIn className="social-icon" />
+          <FaFacebook className="social-icon" />
         </a>
       </li>
       <li className="social-icons">
         <a
-          href="https://www.instagram.com/sunil.yadav84/"
-          target="_blank"
+          href="https://www.instagram.com/tmiiw.ntd/"
           rel="noreferrer"
           className="icon-colour home-social-icons"
         >
@@ -41,8 +38,7 @@ function SocialMedia() {
       </li>
       <li className="social-icons">
         <a
-          href="mailto:sunilyadav8404@gmail.com"
-          target="_blank"
+          href="mailto:nanthida.milk@gmail.com"
           rel="noreferrer"
           className="icon-colour home-social-icons"
         >
