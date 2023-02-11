@@ -81,7 +81,7 @@ function About() {
           >
             <Meta
               title="Adobe Illustrator CC"
-              description="he most of my artworks, I use Ai."
+              description="The most of my artworks, I use Ai."
             />
           </Card>
           <Card
@@ -99,7 +99,7 @@ function About() {
         <br></br>
         <h1 class="text-3xl font-bold underline">Education Background</h1>
         <br></br>
-        <Timeline
+        <Timeline 
           mode="left"
           items={[
             {
@@ -118,7 +118,7 @@ function About() {
               label: "University | November 2018 to 2022",
               color: "green",
               children:
-                "Studying at Department of Computer Engineering and Information Technology, Faculty of Engineering, National University of Lao. Lao-Thai Road • Watnak Village, Sisattanak districts, Vientiane • Laos.",
+                "Studied at Department of Computer Engineering and Information Technology, Faculty of Engineering, National University of Lao. Lao-Thai Road • Watnak Village, Sisattanak districts, Vientiane • Laos.",
             },
             {
               label: "Advance Graphic Design Course | February 05 - March 27 , 2022",
@@ -130,7 +130,7 @@ function About() {
               label: "Collage | October 2019 to 2022",
               color: "green",
               children:
-                "Studying at Lao International Collage; Lao-Thai Road • Ban Saphanthongnuea, Sisattanak districts, Vientiane • Laos.",
+                "Studied at Lao International Collage; Lao-Thai Road • Ban Saphanthongnuea, Sisattanak districts, Vientiane • Laos.",
             },
           ]}
         />

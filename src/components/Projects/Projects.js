@@ -1,8 +1,10 @@
 import React from "react";
+import { Card } from "antd";
 import { Container, Row, Col } from "react-bootstrap";
-import { Tabs } from 'antd';
-import ProjectCard from "./ProjectCards";
-import { PROJECTS } from "../../Constants";
+import { Tabs } from "antd";
+import ps from "../../Assets/Adobe Logo/ps.png";
+import lr from "../../Assets/Adobe Logo/Lr.png";
+import ai from "../../Assets/Adobe Logo/Ai.png";
 
 function Projects() {
   return (
@@ -11,33 +13,66 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-{/* <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {PROJECTS.map((project, index) => (
-            <Col md={4} className="project-card" key={index}>
-              <ProjectCard
-                imgPath={project.image}
-                technologyUsed={project.technologyUsed}
-                isBlog={false}
-                title={project.name}
-                description={project.description}
-                link={project.url}
-              />
-            </Col>
-          ))}
-        </Row> */}
-
-<Tabs
-    onChange={onChange}
-    type="card"
-    items={new Array(2).fill(null).map((_, i) => {
-      const id = String(i + 1);
-      return {
-        label: `Tab ${id}`,
-        key: id,
-        children: `Content of Tab Pane ${id}`,
-      };
-    })}
-  />
+        <Tabs
+          defaultActiveKey="1"
+          items={[
+            {
+              label: "Photograph",
+              key: "1",
+              children: (
+                <>
+                  <Row className="skill-tools-wrapper">
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      cover={<img alt="example" src={lr} />}
+                    >
+                      <Meta
+                        title="Adobe Lightroom CC"
+                        description="I always use it for color grading of my photo that I took."
+                      />
+                    </Card>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      cover={<img alt="example" src={ai} />}
+                    >
+                      <Meta
+                        title="Adobe Illustrator CC"
+                        description="The most of my artworks, I use Ai."
+                      />
+                    </Card>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      cover={<img alt="example" src={ps} />}
+                    >
+                      <Meta
+                        title="Adobe Photoshop CC"
+                        description="I always use Ps for retouch photo that I took and sometime use it for create an artwork."
+                      />
+                    </Card>
+                    <Card
+                      hoverable
+                      style={{ width: 240 }}
+                      cover={<img alt="example" src={ps} />}
+                    >
+                      <Meta
+                        title="Adobe Photoshop CC"
+                        description="I always use Ps for retouch photo that I took and sometime use it for create an artwork."
+                      />
+                    </Card>
+                  </Row>
+                </>
+              ),
+            },
+            {
+              label: "Graphic Design",
+              key: "3",
+              children: <></>,
+            },
+          ]}
+        />
       </Container>
     </Container>
   );
@@ -47,19 +82,7 @@ const onChange = (key: string) => {
   console.log(key);
 };
 
-const App: React.FC = () => (
-  <Tabs
-    onChange={onChange}
-    type="card"
-    items={new Array(2).fill(null).map((_, i) => {
-      const id = String(i + 1);
-      return {
-        label: `Tab ${id}`,
-        key: id,
-        children: `Content of Tab Pane ${id}`,
-      };
-    })}
-  />
-);
+const App: React.FC = () => <Tabs onChange={onChange} type="card" />;
 
+const { Meta } = Card;
 export default Projects;
