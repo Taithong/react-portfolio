@@ -1,12 +1,21 @@
 import React from "react";
 import { Card } from "antd";
-import { Container, Row, Col } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  // Col
+} from "react-bootstrap";
 import { Tabs } from "antd";
 import ps from "../../Assets/Adobe Logo/ps.png";
-import lr from "../../Assets/Adobe Logo/Lr.png";
 import ai from "../../Assets/Adobe Logo/Ai.png";
+import { Button, Space } from "antd";
+
+import listAll from "../../firebase";
 
 function Projects() {
+  const listAllImages = () => {
+    listAll("Pregraduation FEN/");
+  };
   return (
     <Container fluid className="project-section">
       <Container>
@@ -25,12 +34,15 @@ function Projects() {
                     <Card
                       hoverable
                       style={{ width: 240 }}
-                      cover={<img alt="example" src={lr} />}
+                      cover={<img alt="example" src="https://firebasestorage.googleapis.com/v0/b/portfolio-55d0a.appspot.com/o/Pregraduation%20FEN%2FIMG_0624.jpg?alt=media&token=84e3a356-343a-43ae-a22a-2ee030abb94d" />}
                     >
-                      <Meta
-                        title="Adobe Lightroom CC"
-                        description="I always use it for color grading of my photo that I took."
-                      />
+                      <Space wrap>
+                        <Meta title="Pregraduation FEN" />
+                        <br></br>
+                        <Button type="primary" onClick={listAllImages}>
+                          View
+                        </Button>
+                      </Space>
                     </Card>
                     <Card
                       hoverable
@@ -78,11 +90,12 @@ function Projects() {
   );
 }
 
-const onChange = (key: string) => {
-  console.log(key);
-};
+// const onChange = (key: string) => {
+//   console.log(key);
+// };
 
-const App: React.FC = () => <Tabs onChange={onChange} type="card" />;
+// const App: React.FC = () => <Tabs onChange={onChange} type="card" />;
 
 const { Meta } = Card;
+
 export default Projects;
