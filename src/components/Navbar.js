@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
-import logo from "../Assets/uptome.png"
+import logo from "../Assets/logo.png"
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,

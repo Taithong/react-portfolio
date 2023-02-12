@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(500);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -19,13 +19,14 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Row className="resume">
-          <Document file={pdf}>
+          <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-55d0a.appspot.com/o/CV.jfif?alt=media&token=992b02c6-ba2e-48d8-85ed-a7ca575059d5" />
+          {/* <Document file={pdf}>
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          </Document> */}
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank" className="download-button">
+          <Button variant="primary" href="https://firebasestorage.googleapis.com/v0/b/portfolio-55d0a.appspot.com/o/CV.jfif?alt=media&token=992b02c6-ba2e-48d8-85ed-a7ca575059d5" target="_blank" className="download-button">
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
